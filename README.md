@@ -23,5 +23,5 @@ CI/CD ( CircleCI | Github Actions )
 npm i -g @kozmonos/template-generator
 
 #  pull this template to local folder
-$ template pull --url https://github.com/{{username}}/{{repo}}
+template pull --url https://github.com/{{username}}/{{repo}}
 ```
