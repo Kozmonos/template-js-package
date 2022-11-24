@@ -1,0 +1,27 @@
+{
+  {{#company}}
+  "name": "@{{company}}/{{name}}",
+  {{/company}}
+  {{^company}}
+  "name": "{{name}}",
+  {{/company}}
+  "version": "0.0.1",
+  "description": "{{description}}",
+  "main": "index.min.js",
+  "scripts": {
+    "minify": "uglifyjs --compress --mangle --output ./index.min.js -- ./index.js",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0",
+    "uglifyjs": "^2.4.11"
+  },
+  "keywords": [
+    "js functions",
+    "js global functions"
+  ],
+  {{#author}}
+  "author": "{{author}}",
+  {{/author}}
+  "license": "ISC"
+}
